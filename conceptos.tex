@@ -1,0 +1,102 @@
+\section*{Sección 2}
+\frame
+{
+\frametitle{}
+\begin{center}
+\begin{huge}
+\hspace*{1cm}Conceptos asociados\newline\newline
+\end{huge}
+\includegraphics[width=0.5\textwidth]{imgs/conceptos.jpg}
+\end{center}
+}
+
+\section{Conceptos asociados}
+\frame
+{
+\frametitle{Introducción de conceptos}
+\begin{itemize}
+ \item Importante familiarizarse con algunos términos del mundillo.
+ \item La razón es conocer de forma general qué papel juegan ciertos elementos en los procesadores.
+ \item Una visión clara de los conceptos asociados al tema nos facilita la elección de un procesador.
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Socket de CPU}
+\begin{itemize}
+ \item El \textbf{socket de CPU} es una matriz de pequeños agujeros (zócalo) existente en una placa base donde encajan los pines de un microprocesador; dicha matriz, denominada \textit{Pin grid array} o PGA, permite la conexión entre el microprocesador y dicha placa base.
+ \item Ejemplos de socket de CPU son: Socket 939 (AMD), Socket AM2 (AMD), Socket 478 (Intel), Socket 775 (Intel)...\vspace*{0.5cm}
+
+\hspace*{3cm}
+\includegraphics[width=1.5cm]{imgs/socket939.jpg}
+\hspace*{1cm}
+\includegraphics[width=3.5cm]{imgs/socket775.jpg}
+
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Niveles de caché}
+\begin{itemize}
+ \item \textbf{Propósito de la caché:} actuar como una memoria temporal entre los registros de CPU, limitados y de gran velocidad y la RAM, mucho más grande y lenta.
+ \item Los subsistemas de caché pueden ser de \textbf{niveles múltiples}; es decir, puede haber más de un conjunto de caché entre el CPU y la memoria principal. 
+ \item Muchos sistemas tienen \textbf{dos niveles de caché}:
+	\begin{itemize}
+	\item \underline{Caché L1}  $\Rightarrow$ ubicada en el chip de la CPU, se ejecuta a la misma velocidad que dicha CPU.
+	\item \underline{Caché L2} $\Rightarrow$ suele ser parte del módulo de la CPU, se ejecuta a las mismas velocidades que la CPU (o casi) y es un poco más grande y lenta que la caché L1.
+	\end{itemize}
+ \item Algunos sistemas (normalmente servidores) también tienen \textbf{caché L3} formando parte del sistema de la placa base. La caché L3 es más grande y  algo más lenta que la caché L2.
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{MMX}
+\begin{itemize}
+ \item Es el acrónimo de \textbf{M}ulti\textbf{m}edia E\textbf{x}tensions.
+ \item Conjunto de instrucciones \textbf{SIMD} (Single Instruction Multiple Data) diseñado por Intel e introducido en 1997 en sus microprocesadores Pentium MMX.
+ \item MMX agregó \textbf{8 nuevos registros} a la arquitectura, conocida como MM0 a MM7. En realidad, estos nuevos registros son meros alias de los registros de la pila de la FPU. Cada uno de los registros MMn es un número entero de 64 bits.
+ \item El juego de instrucciones MMX utiliza el concepto del \textbf{tipo de datos compactados} $\Rightarrow$ en lugar de usar el registro completo para un solo número entero de 64 bits, se usa para almacenar dos enteros de 32 bits, cuatro enteros de 16 bits u ocho enteros de 8 bits.
+ \item \textbf{Problema:} MMX sólo soporta operaciones con números enteros. Hace algún tiempo, el uso de matemáticas de vector entero tenía sentido (operaciones 2D y 3D), pero cuando esta funcionalidad se pasa a las GPUs, la coma flotante se vuelve mucho más importante.
+ \end{itemize}
+}
+
+\frame
+{
+\frametitle{SSE}
+\begin{itemize}
+ \item \textbf{SSE} (Streaming SIMD Extensions) es una extensión al grupo de instrucciones MMX.
+ \item Estas instrucciones operan con paquetes de operandos en \textbf{coma flotante} de precisión simple.
+ \item Hay varios tipos de instrucciones SSE:
+	\begin{itemize}
+		\item Instrucciones SSE de Transferencia de datos.
+ 		\item Instrucciones SSE de Conversión.
+ 		\item Instrucciones SSE Aritméticas.
+ 		\item Instrucciones SSE lógicas.
+	\end{itemize}
+ \item Con la tecnología SSE, se introducen 70 nuevas instrucciones y 8 registros nuevos: del xmm0 al xmm7.
+ \item Los registros tienen una extensión de 128 bits. A diferencia de MMX, la utilización de SSE no implicaba la inhabilitación de la FPU, por lo que no era necesario habilitarla nuevamente, lo que significaba para MMX pérdida de velocidad.
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{FSB (Front Side Bus)}
+\begin{itemize}
+ \item La CPU está conectada a \textbf{un bus} que le permite comunicarse con el resto de dispositivos.
+ \item Gracias a este bus frontal de datos, llamado \textbf{FSB} (Front Side Bus), la CPU recibe información y la envía a otros dispositivos.
+ \item El FSB se encuentra conectado al chip \textbf{Northbridge}, que es el núcleo de la placa base.
+ \item La frecuencia de un procesador se expresa en términos de la \textbf{frecuencia del FSB} multiplicado por un valor predeterminado por el fabricante, por eso conocer bien el FSB es vital en la práctica del Overclocking (forzar un procesador a trabajar a una velocidad mayor que la de serie).
+ \item \textbf{Ejemplo} $\Rightarrow$ \textbf{Multiplicador:} x18, \textbf{Frecuencia del FSB:} 200MHz, \textbf{Frecuencia del procesador:} 3600 MHz.
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{FSB (Front Side Bus)}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{imgs/nsbridge.png}
+\end{center}
+}

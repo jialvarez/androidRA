@@ -1,0 +1,134 @@
+\section*{Sección 4}
+\frame
+{
+\frametitle{}
+\begin{center}
+\begin{huge}1 núcleo, 2 núcleos, 4 núcleos... Un poco \hspace*{1.5cm}de historia.\newline\newline
+\end{huge}
+\includegraphics[width=0.25\textwidth]{imgs/amd-opteron.jpg}\hspace*{1cm}
+\includegraphics[width=0.28\textwidth]{imgs/intel-quad.jpg}
+\end{center}
+}
+
+\section{1 núcleo, 2 núcleos, 4 núcleos... Un poco de historia.}
+\frame
+{
+\frametitle{¿Necesitamos tanta capacidad?}
+\begin{itemize}
+\item La enferma carrera que mantienen Intel y AMD por superar al rival nos lleva a ver morir productos que ni siquiera pudimos consumir ni necesitábamos hacerlo.
+\item Muchos ni siquiera disponemos aún de un procesador de doble núcleo, ni en el PC de escritorio ni en el portátil.
+\item Es posible saltarse hasta una generación de procesadores en la compra de nuestro próximo equipo.
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{AMD vs. Intel y una carrera que no para}
+\begin{itemize}
+\item AMD lanzó sus procesadores doble núcleo, los Athlon64 X2, luego Intel hizo lo propio con su línea Pentium D.
+\item Pentium D utilizaba la tecnología NetBurst, con cuello de botella para los datos y no alcanzaba en rendimiento a Athlon 64 X2.
+\item Intel contraataca con los Core Duo, con nueva tecnología y diseño de 65 nanómetros. Más tarde, actualiza la tecnología a la actual \textbf{Core 2 Duo}.
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Pero, ¿qué es doble núcleo?}
+\begin{itemize}
+\item Esta pregunta tan manida significa que la CPU, tiene no un procesador, si no dos en el mismo paquete y se distribuyen el trabajo.
+\item Lo lógico es pensar que al tener dos cerebros se puede procesar el doble de información, pero, lamentablemente, no siempre es así.
+\item Dos factores justifican esta limitación:
+
+	\begin{itemize}
+	\item[1)] \textbf{Ancho de banda / cuello de botella}
+		\begin{itemize}
+		\item Problema común en los Pentium D, que \textbf{comparten el FSB} para recibir información y devolverla procesada.
+		\item El FSB está \textbf{limitado en ancho} y encima es compartido por ambos núcleos, por lo que los datos deben esperar su turno para procesarse.
+		\item \textbf{AMD} creó la interconexión \textbf{HyperTransport}, que interconecta los núcleos en varias direcciones, lo que proporciona un canal directo entre el procesador y la memoria sin tener que compartirlo con nadie. 
+		\item Problema de AMD $\Rightarrow$ cuando AMD estaba utilizando un \textbf{método de fabricación} de 130nm, Intel pasó al de 90nm, cuando AMD al fin pudo llegar a 90nm Intel se volvió a adelantar con el de 65nm.
+		\item La ventaja de poder incluir \textbf{más en menos espacio} y que las conexiones y distancias de los circuitos sean más pequeñas es que se necesita menos energía para mover un electrón de un lugar al otro.
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Pero, ¿qué es doble núcleo?}
+\begin{itemize}
+ 	\item Dos factores justifican esta limitación:
+
+	\begin{itemize}
+	\item[2)] \textbf{Aplicaciones}
+
+		\begin{itemize}
+		\item \textbf{Pocas aplicaciones preparadas} para sacar provecho de dos núcleos (incluidos los juegos).
+		\item El único lugar donde se saca realmente provecho es del \textbf{lado servidor} y procesamiento de video.
+		\item Gran ventaja con múltiples núcleos $\Rightarrow$ renderizando una \textbf{imagen 3D de alta resolución}, cada núcleo se puede encargar de un frame, tener muchos núcleos nos multiplicaría el tiempo ahorrado.
+		\item Por esta razón se utilizan \textbf{granjas de servidores} para procesar películas.
+		\item Básicamente se aprovechan las ventajas en todas las tareas que se puedan dividir en hilos y no ser todo un conjunto de procesamiento.
+		\end{itemize}
+
+	\end{itemize}
+
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Quad core: 4 núcleos efectivos.}
+\begin{itemize}
+\item \textbf{AMD: pionera} con su AMD Quad FX (AMD 4x4 antes de su lanzamiento).
+\item Emplea \textbf{dos zócalos AM2} con HyperTransport, cada uno de los cuales permite una \textbf{CPU de doble núcleo} y un banco de \textbf{memoria DDR2}.
+\item \textbf{Intel} contraataca con dos Core 2 Duo en un mismo paquete compartiendo el bus de datos a la memoria, llamándolos:
+	\begin{itemize}
+	\item \textbf{Core 2 Quad:} procesadores con 4 núcleos y de 64 bits. Son un 70\% más rápidos que los Core 2 Duo.
+	\item \textbf{Core 2 Extreme:} tienen multiplicador desbloqueado (hasta 40x), y se utilizan los mejores cristales en su fabricación, con lo cual el proceso de overclocking es más sencillo y tiene un potencial más alto.
+	\end{itemize}
+\item \textbf{Para portátiles:} en el primer semestre de 2008 se actualizan los denominados \textbf{Intel Santa Rosa} con la tecnología \textbf{Core 2 Quad}. Los procesadores serán los llamados \textbf{\textit{Penryn}}.
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Quad core: 4 núcleos efectivos.}
+\begin{itemize}
+ \item La ``competición'' no termina aquí: mientras Intel vende microprocesadores de cuatro núcleos que son \textbf{dos paquetes de dos núcleos cada uno}, AMD lanza los Opteron (nombre clave \textbf{\textit{Barcelona}}), con cuatro núcleos de verdad individuales dentro del propio procesador.
+ \item El mercado de servidores se encuentra ahora con la dualidad AMD Opteron - Intel Xeon (Core 2 Extreme), ambos con 4 núcleos.
+ \item Por si fuera poco, AMD lanza \textbf{\textit{Phenom}} para equipos de sobremesa, que llegan al mercado en el primer trimestre de 2008. Las versiones de triple núcleo (nombre código ``Toliman'') formarán las series \textit{Phenom 8000}, las versiones de cuatro núcleos (nombre código ``Agena'') formarán las series \textit{Phenom 9000}, y las versiones de gama alta (nombre código ``Agena FX'') serán las series \textit{Phenom FX}.
+ \item No consiguen derrotar a \textbf{\textit{Intel Core 2 Quad}} ni siquiera en la que se suponía su mayor baza (consumo energético) ni en escala de integración (Intel utiliza ya ¡45nm!).
+
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Curiosidades...}
+\begin{itemize}
+ \item Para identificar la información de un procesador:
+\end{itemize}
+
+\begin{center}
+ \includegraphics[width=0.8\textwidth]{imgs/howto-procesador.png}
+\end{center}
+}
+
+\frame
+{
+\frametitle{Curiosidades...}
+\textbf{Shrek Tercero} se diseñó con el siguiente hardware:
+\hspace*{2cm} \includegraphics[width=1cm]{imgs/shrek3.jpg}
+\begin{itemize}
+\item Servidores \textbf{HP ProLiant DL145} compuestos por procesadores \textbf{AMD Opteron} de doble núcleo y \textbf{8GB de RAM.}
+\item Estaciones de trabajo \textbf{HP xw9300} compuestas de igual manera por procesadores \textbf{AMD Opteron} de doble núcleo.
+\item Portátiles \textbf{HP nx6125} basadas en el procesador \textbf{AMD Turion64 X2}.
+\item Para elaboración de la película se utilizaron la cantidad de 4000 núcleos es decir 2000 procesadores.
+\item En 2001, \textbf{Shrek I} necesitó 5 millones de horas de CPU. En 2004, \textbf{Shrek 2 } precisó 10 millones, y en 2007 \textbf{Shrek 3} preciśo 20 millones.
+\item El almacenamiento de Shrek 3 precisa 24 TB.
+\end{itemize}
+	\scriptsize \fbox{
+	\begin{minipage}{11cm}
+	Linux Red Hat Enterprise 4 como SO y Python para escribir las utilidades software.
+	\end{minipage}
+	}
+}

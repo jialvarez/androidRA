@@ -1,0 +1,162 @@
+\section*{Sección 3}
+\frame
+{
+\frametitle{}
+\begin{center}
+\begin{huge}
+\hspace*{1cm}Un baile de tecnologías\newline\newline
+\end{huge}
+\includegraphics[width=0.4\textwidth]{imgs/tecnologias.jpg}
+\end{center}
+}
+
+\section{Un baile de tecnologías}
+\frame
+{
+\frametitle{Tecnologías empleadas por los principales competidores}
+
+\begin{itemize}
+ \item \textbf{Tecnologías empleadas por INTEL:}
+
+	\begin{itemize}
+	 \item Hyper-Threading
+	 \item Intel 64 Architecture
+	 \item Bit de desactivación de ejecución y seguridad
+	\end{itemize}
+
+\item \textbf{Tecnologías empleadas por AMD:}
+
+	\begin{itemize}
+	 \item HyperTransport
+	 \item AMD 64
+	 \item Bit NX
+	\end{itemize}
+
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Tecnologías empleadas por INTEL}
+\begin{itemize}
+ \item \textbf{Hyper-Threading:}
+ \begin{itemize}
+  \item Dos formas de brindar más potencia informática:
+	\begin{enumerate}
+	 \item Aumentar la velocidad del reloj.
+	 \item Realizar más trabajo en \textbf{cada ciclo de reloj}.
+	\end{enumerate}
+  \item Un procesador \textit{compatible} con la tecnología Hyper-Threading se presenta a sí mismo ante las aplicaciones y los S.O. como dos \textbf{procesadores virtuales}.
+  \item El procesador puede entonces trabajar en \textbf{dos conjuntos de tareas} a la vez, utilizar los recursos que de otro modo estarían inactivos y realizar más trabajo en la misma cantidad de tiempo.
+  \item En los \textbf{PC de escritorio:}
+	\begin{itemize}
+	 \item La tecnología HT aprovecha la capacidad de subprocesos múltiples integrada en WinXP y en muchas aplicaciones. El software con subprocesos múltiples divide su carga de trabajo en procesos y subprocesos que se pueden programar y enviar de forma independiente. Es parecido a un sistema multiprocesador pero con \underline{un único procesador}.
+	\end{itemize}
+ \end{itemize}
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Tecnologías empleadas por INTEL}
+\begin{itemize}
+  \item En los \textbf{servidores:}
+	\begin{itemize}
+	 \item La tecnología HT permite el paralelismo a nivel de subprocesos al duplicar el estado arquitectónico de cada procesador a la vez que se comparte un conjunto de recursos de ejecución del procesador. Cuando programa subprocesos, el SO considera los dos estados arquitectónicos claramente determinados como procesadores ``lógicos'' separados
+	\end{itemize}
+ 
+\begin{center}
+  \includegraphics[width=0.6\textwidth]{imgs/ht.png}
+\end{center}
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Tecnologías empleadas por INTEL}
+\begin{itemize}
+ \item \textbf{Intel 64:}
+
+	\begin{itemize}
+		\item La arquitectura \textbf{Intel 64} proporciona \textbf{computación de 64 bits} cuando se combina con \underline{software que la soporte}. 
+		\item Mejora el rendimiento permitiendo a los sistemas direccionar\textbf{ más de 4 gigabytes} tanto de \textbf{memoria virtual} como \textbf{física}.
+ 	\end{itemize}
+
+ \item \textbf{Bit de desactivación de ejecución y seguridad:}
+
+	\begin{itemize}
+		\item Previene ciertos tipos de ataques de \textbf{desbordamiento de buffer} cuando se combina con un sistema operativo compatible.
+		\item Permite que el procesador clasifique \textbf{áreas de la memoria} en función de dónde se puede ejecutar el código de las aplicaciones.\newline
+	\end{itemize}
+
+\begin{center}
+\scriptsize \fbox{
+\begin{minipage}{11cm}
+Si un gusano intenta \textbf{insertar código en el buffer}, el procesador desactiva la ejecución del código, lo cual evita el daño y la propagación del gusano.
+\end{minipage}
+}
+\end{center}
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Tecnologías empleadas por AMD}
+\begin{itemize}
+ \item \textbf{HyperTransport:}
+
+	\begin{itemize}
+		\item Tecnología que induce en una \textbf{mejora de las prestaciones} del sistema, diseñada para incrementar las mismas mediante la \textbf{eliminación de cuellos de botella en la E/S}, lo cual mejora notablemente el ancho de banda y reduce la \textit{latencia}. 
+
+		\item Las mejoras se centran en cuatro apartados:
+
+		\begin{itemize}
+		 \item[1)] \textbf{FSB del procesador:} Sustituyendo el FSB por unas conexiones de E/S basadas en la tecnología HyperTransport se consigue una \textbf{extensión del ancho de banda} desde los 2,1GB/s hasta los 6,4GB/s.
+
+		 \item[2)] \textbf{Interfaz de memoria:} Cuando ocurre un fallo en la caché, el procesador debe traer información de memoria principal. En Northbridge/Southbridge, las transacciones de memoria pasan por el chip Northbridge, creando latencias adicionales. Para resolver este cuello de botella, AMD incorpora el controlador de memoria en su 8ª generación de procesadores. 
+
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Tecnologías empleadas por AMD}
+\begin{itemize}
+ \item \textbf{HyperTransport:}
+
+	\begin{itemize}
+		\item Las mejoras se centran en cuatro apartados:
+
+		\begin{itemize}
+		 \item[3)] \textbf{Interconexión chip a chip:} La \textbf{integración simultánea} de las tecnologías de alta velocidad como AGP-8x, Gigabit Ethernet, PCI-X, etc. elimina virtualmente los cuellos de botella en la E/S.
+
+		 \item[4)] \textbf{Capacidades de expansión de E/S hacia la industria de buses de alta velocidad:} La arquitectura Northbridge/Southbridge no está preparada para soportar más de dos \textit{núcleos lógicos}, ya que la funcionalidad debería fijarse a una interfaz existente, y un bus actual no tendría suficiente ancho de banda para soportar tecnologías de alta velocidad.
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Tecnologías empleadas por AMD}
+\begin{itemize}
+ \item \textbf{HyperTransport:}
+
+	\begin{center}
+	\includegraphics[width=0.8\textwidth]{imgs/htransport.png}
+	\end{center}
+
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{Tecnologías empleadas por AMD}
+\begin{itemize}
+ \item \textbf{AMD64:} es una arquitectura basada en la \textbf{extensión} del conjunto de instrucciones x86 para manejar direcciones de 64 bits. Además, contempla mejoras adicionales como \textbf{duplicar el número y el tamaño} de los registros de uso general y de instrucciones SSE.
+
+ \item \textbf{Bit NX:} el bit NX es una característica del procesador que permite al SO prohibir la ejecución del código en ciertas áreas de datos. 
+\end{itemize}
+}
