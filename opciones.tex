@@ -2,11 +2,29 @@
 \frame
 {
 \frametitle{¿Qué opciones hay?}
-\begin{itemize}
-\item \textbf{Layar:} 
-\item \textbf{Wikitude:} 
-\item \textbf{Metaio:} 
-\item \textbf{Vuforia:} 
-\item \textbf{OpenCV:} 
-\end{itemize}
+{\setlength{\arrayrulewidth}{0mm}
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{| m{3cm} | m{4cm} | m{4cm} |}
+  \hline
+  \includegraphics[height=2cm, width=1.8cm]{imgs/opencv.png} & 
+     \hspace{2cm}\includegraphics[width=3cm]{imgs/vuforia.png} & 
+     \hspace{2cm}\includegraphics[width=3cm]{imgs/metaio.jpg}
+  \end{tabular}
+\end{table}
 }
+
+{\setlength{\arrayrulewidth}{0mm}
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{| m{4cm} | m{4cm} |}
+  \hline
+  \includegraphics[width=2cm]{imgs/layar.jpg}& \includegraphics[width=2cm]{imgs/wikitude.png}
+  \end{tabular}
+\end{table}
+}
+}
+
+\include{opencv}
+\include{vuforia}
+\include{metaio}

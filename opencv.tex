@@ -1,0 +1,37 @@
+\subsection*{OpenCV}
+\frame
+{
+\frametitle{OpenCV for Android}
+\begin{itemize}
+ \item Biblioteca libre de \textbf{visión artificial} originalmente desarrollada por \textbf{Intel}
+ \item En 2008, la empresa \textbf{Willow Garage} asume el soporte. En 2012, lo hace la empresa \textbf{ItSeez}.
+ \item Disponible para Windows, Linux, Mac, Android e iOS
+ \item Para Android se proporciona la API Java con clases específicas, que es un subconjunto de la API de C
+ \item SDK Quick start\\ \url{http://docs.opencv.org/doc/tutorials/introduction/android_binary_package/O4A_SDK.html}
+ \item Utilizado en aeronaves no tripuladas, sistemas de vigilancia, reconocimiento facial, etc.
+\end{itemize}
+}
+
+\frame
+{
+\frametitle{OpenCV for Android: ventajas e inconvenientes}
+\begin{itemize}
+\item \textbf{Ventajas:}
+  \begin{itemize}
+   \item Licencia BSD
+   \item Buen rendimiento
+   \item Multiplataforma
+   \item Soporte de la comunidad. Multitud de snippets.
+  \end{itemize}
+
+\item \textbf{Inconvenientes:}
+  \begin{itemize}
+   \item La API de Java es un subconjunto mínimo. Para obtener un conjunto mayor, se recomienda usar el NDK + JNI. Más info: \\
+     \url{http://www.nacho-alvarez.es/index.php/blog/2012/05/02/conectar-programas-cc-con-aplicaciones-android/}
+   \item El sobreimpresionado de elementos debe hacerse manualmente
+   \item Se centra en visión por computador, así que no tenemos la parte GPS
+   \item Hace falta una formación específica en visión artificial para utilizarla correctamente
+  \end{itemize}
+
+\end{itemize}
+}
