@@ -1,10 +1,11 @@
 \documentclass{beamer}
 \usepackage[spanish]{babel}
-\usepackage[utf8]{inputenc}
 \usepackage{beamerthemeshadow}
 \usepackage{pgf}
 \usepackage{eurosym}
 \usepackage{array}% http://ctan.org/pkg/array
+\usepackage{fontspec}
+\usepackage{fontawesome}
 \newcolumntype{M}{>{\centering\arraybackslash}m{\dimexpr.25\linewidth-2\tabcolsep}}
 \usepackage{hyperref}
 \hypersetup{
@@ -17,20 +18,16 @@
 
 \setbeamertemplate{itemize item}[triangle]
 
-
 \begin{document}
+
 
 \title{Realidad aumentada en Android}
 \subtitle{Reconocimiento de imágenes y geolocalización usando Google Maps}
-\author[Nacho Álvarez]
-{
-  \begin{tabular}[h]{cc}
-      Nacho Álvarez\\
-      @neonigmacdb
-  \end{tabular} 
-}
+\author[Nacho Álvarez]{\texorpdfstring{Nacho Álvarez
+  \\ \faTwitter \hspace{5pt}@neonigmacdb
+  \\ \faEnvelope \hspace{5pt}neonigma@gmail.com}{Author}}
 
-\institute[WUL4]{WUL4 (What You Look For)}
+\institute[WUL4]{\includegraphics[height=0.6cm]{imgs/wul4.png}}
 \date{\today}
 
 
